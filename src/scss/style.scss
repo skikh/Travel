@@ -1,0 +1,42 @@
+/*---------COMMON------------------*/
+@import"../scss/common/_null.scss";
+@import"../scss/common/_vars.scss";
+@import"../scss/common/_mixins.scss";
+@import"../scss/common/_media.scss";
+
+
+/*---------BLOCKS------------------*/
+@import"../scss/blocks/_button.scss";
+@import"../scss/blocks/_swiper.scss";
+@import"../scss/blocks/_title.scss";
+@import"../scss/blocks/_see-all.scss";
+@import"../scss/blocks/_icon-fav.scss";
+@import"../scss/blocks/_item-price.scss";
+
+
+/*---------LAYOUT------------------*/
+// INDEX PAGE
+@import"../scss/layout/IndexPage/_slogan.scss";
+@import"../scss/layout/IndexPage/_swiper-videos.scss";
+@import"../scss/layout/IndexPage/_popular.scss";
+@import"../scss/layout/IndexPage/_about.scss";
+@import"../scss/layout/IndexPage/_types.scss";
+@import"../scss/layout/IndexPage/_application.scss";
+// TRIP PAGE
+@import"../scss/layout/TripPage/_name.scss";
+@import"../scss/layout/TripPage/_description.scss";
+@import"../scss/layout/TripPage/_calendar.scss";
+@import"../scss/layout/TripPage/_route.scss";
+@import"../scss/layout/TripPage/_additional.scss";
+@import"../scss/layout/TripPage/_important.scss";
+@import"../scss/layout/TripPage/_booking.scss";
+// GLOBAL LAYOUTS
+@import"../scss/layout/_global.scss";
+@import"../scss/layout/_header.scss";
+@import"../scss/layout/_footer.scss";
+@import"../scss/layout/_gallery.scss";
+@import"../scss/layout/_feedback.scss";
+
+
+/*---------MEDIA------------------*/;
+@import"../scss/common/_media.scss";

@@ -1,0 +1,187 @@
+@media (max-width: calc(#{$containerWidth}px + 30px)) {
+    .container-fluid {
+        margin: 0 auto;
+        &_l {
+            padding-left: 15px;
+        }
+        &_r {
+            padding-right: 15px;
+        }
+    }
+}  
+
+@media (max-width: 1280px) {
+    .gallery {
+        &__wrapper {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 180px);
+            grid-template-areas:
+            "img2 img3 img4"
+            "img2 img3 img4"
+            "img2 img1 img1";
+        }
+        &__img {
+            overflow: hidden;
+            filter: brightness(.85);
+            transition: .6s linear all;
+            border-radius: 5px;
+            &_5 { display: none; }
+            &_6 { display: none; }
+            &_7 { display: none; }
+            &_8 { display: none; }
+        }
+    }
+    .descr {
+        &__content {
+            @include gap(80,60);
+            flex-direction: column;
+        }
+        &__info {
+            max-width: 100%;
+        }
+    }
+    .route {
+        &__main {
+            display: block;
+        }
+        &__content {
+            padding-top: 0;
+            padding-right: 15px;
+            margin-bottom: 60px;
+        }
+    }
+    .important{
+        &__main {
+            grid-column: 12 span;
+        }
+        &__warning {
+            margin-top: 40px;
+            grid-column: 12 span;
+            flex-direction: row;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .types {
+        &__item {
+            grid-column: 12 span;
+        }
+    }
+}
+
+@media (max-width: 620px) {
+
+    .swiper-videos{
+        width: 400px;
+    }
+    .booking {
+        @include padding-bottom(150,75);
+        .container-fluid_r {
+            padding-right: 0;
+        }
+        &__main {
+            flex-direction: column;
+        }
+        &__bg {
+            @include height(360,320);
+            width: 100%;
+            border-radius: 0px;
+            margin-bottom: 40px;
+        }
+        &__content {
+            padding: 0 15px;
+            text-align: center;
+        }
+    }
+    .gallery {
+        &__wrapper {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 180px);
+            grid-template-areas:
+            "img2 img3"
+            "img2 img4"
+            "img1 img1";
+        }
+    }
+}    
+
+@media (max-width: 576px) {
+    .slogan {
+        &__title_first:after {
+            right: -1%;
+        }
+        &__main {
+            gap: 90px;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &__social {
+            position: relative;
+            right: -90%;
+            bottom: 150px;
+        }
+    }
+    .feedback {
+        &__swiper-slide {
+            width: 280px;
+            height: 450px;
+        }
+    }
+    .item-feedback {
+        padding: 30px 25px;
+        flex-direction: column;
+        &__img {
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+    .application {
+        background: url('img/bg-application-phone.jpg') no-repeat 50%/cover;
+        padding: 25px 0 260px 0;
+        &__wrapper {
+            margin: 0;
+            max-width: 100%;
+            align-items: center;
+        }
+        &__btn {
+            margin: 40px auto 0 auto;
+        }
+    }
+    .footer {
+        &__wrapper {
+            flex-direction: column;
+            align-items: unset;
+        }
+        &__middle {
+            order: 3;
+        }
+    }
+    .name {
+        &__bottom {
+            justify-content: center;
+        }
+        &__title {
+            text-align: center;
+        }
+    }
+    .trip-calendar {
+        .container-fluid_r {
+            padding-right: 0;
+        }
+        &__content {
+            width: 100%;
+            align-items: center;
+        }
+    }
+    .calendar__day-available-time {
+        width: 44px;
+    }
+    .important {
+        &__warning {
+            flex-direction: column;
+        }
+    }    
+}

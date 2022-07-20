@@ -1,0 +1,14 @@
+// link для просмотра всех туров
+
+.see-all {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.2;
+    text-decoration: underline;
+    color: #282828;
+    transition: .15s ease color;
+    &:hover {
+        transition: .15s ease color;
+        color: $yellow;
+    }
+}

@@ -1,0 +1,10 @@
+.icon-fav {
+    cursor: pointer;
+    &.active {
+        fill: none;
+        path {
+            stroke: $blue;
+            fill: $blue;
+        }
+    }
+}

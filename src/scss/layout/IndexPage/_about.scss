@@ -1,0 +1,35 @@
+.about {
+    &__wrapper {
+        display: flex;
+        position: relative;
+        align-items: center;
+    }
+    &__bg {
+        @include height(750,700);
+        width: 85%;
+        background: url('../build/img/bg-about.jpg') no-repeat 50%/cover;
+        border-radius: 0px 10px 10px 0px;
+        filter: brightness(.75);
+    }
+    &__info {
+        @include padding-top(60,30);
+        @include padding-right(75,30);
+        @include padding-bottom(100,30);
+        @include padding-left(85,30);
+        margin-left: -202px;
+        background: #EDEDED;
+        border-radius: 10px;
+        z-index: 2;
+    }
+    &__title {
+        @include margin-bottom(40,20);
+    }
+    &__text {
+        @include max-width(380,300);
+        @include font-size(14,13);
+        @include margin-bottom(20,10);
+        font-weight: 500;
+        line-height: 1.2;
+        color: $black;
+    }
+}

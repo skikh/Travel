@@ -1,0 +1,79 @@
+.item-price {
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        top: -17px;
+        left: -17px;
+        width: 57px;
+        height: 57px;
+        border-radius: 100%;
+        background-color: $yellow;
+        z-index: -1;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 0;
+        height: 0;
+        border-bottom: 44px solid #fff;
+        border-left: 44px solid #fff;
+        border-bottom-right-radius: 100%;
+        filter: blur(15px);
+        z-index: 10;
+
+    }
+    &__box {
+        width: 160px;
+        height: 100px;
+        padding: 20px;
+        min-width: 160px;
+        height: 100px;
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+    &__value {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.2;
+        color: $blue;
+        position: relative;
+        padding-left: 40px;
+        &:before {
+            content: '';
+            background: url('icons/price-trip.svg') no-repeat center;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+        }
+        &-time {
+            position: relative;
+            &:before {
+                content: '';
+                background: url('icons/time-trip.svg') no-repeat center;
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+            }
+        }
+    }
+    &__type {
+        margin-top: 4px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.2;
+        color: $black;
+    }
+}

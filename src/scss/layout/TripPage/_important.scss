@@ -1,0 +1,64 @@
+.important {
+    &__wrapper {
+        @include margin-top(90,40);
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.2;
+        color: $black;
+    }
+    &__main {
+        grid-column: 6 span;
+        font-style: normal;
+    }
+    &__subtitle {
+        @include font-size(18,16);
+        font-weight: 500;
+        color: #000000;
+    }
+    &__item {
+        margin-top: 40px;
+        position: relative;
+        min-height: 68px;
+        padding-left: 95px;
+        &:before {
+            content: '';
+            background: url('icons/pasport.svg') no-repeat center/cover;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 68px;
+            height: 68px;
+        }
+    }
+    &__item-head {
+        @include font-size(18,16);
+        font-weight: 700;
+        color: $blue;
+    }
+    &__item-text {
+        @include font-size(14,13);
+        margin-top: 20px;
+    }
+    &__warning {
+        grid-column: 9 / 4 span;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    &__warning-item {
+        @include padding(25,10);
+        @include padding-right(60,35);
+        background: url('icons/!.svg') no-repeat 93% #EDEDED;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 135px;
+        border-radius: 10px;
+    }
+    &__warning-text {
+        @include font-size(14,13);
+    }
+}

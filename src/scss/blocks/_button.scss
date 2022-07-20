@@ -1,0 +1,45 @@
+// Кнопки на всех страницах
+
+.btn {
+        display: block;
+        padding: 12px 43px;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        border: none;
+        color: #FFFFFF;
+        background: linear-gradient(92.71deg, #0499DD 0%, #17C1BC 100%);
+        border-radius: 40px;
+        position: relative;
+        width: fit-content;
+        transition: .3s ease color;
+        cursor: pointer;
+        &:hover {
+            color: $yellow;
+            transition: .3s ease color;
+        }
+        &_arrow {
+            padding: 16px 70px 17px 50px;
+            font-size: 14px;
+            line-height: 17px;
+            border-radius: 60px;
+            &:after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 50px;
+                background: url('../build/icons/arrow-btn.svg') no-repeat center;
+                width: 14px;
+                height: 8px;
+                transition: .3s ease transform;
+            }
+            &:hover {
+                &:after {
+                    transition: .3s ease transform;
+                    transform: translate(10px, -50%);
+                }
+            }
+        }
+    }
+    

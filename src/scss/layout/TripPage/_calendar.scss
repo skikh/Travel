@@ -1,0 +1,122 @@
+.trip-calendar {
+    &__main {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    &__bg {
+        background: url('img/calend-img.jpg') no-repeat 50%/cover;
+        border-radius: 0px 10px 10px 0px;
+        width: 65%;
+        height: 877px;
+    }
+    &__content {
+        width: 560px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &__title {
+        background: #ffffff;
+        padding: 3px 10px;
+        border-radius: 5px;
+    }
+    &__swiper {
+        width: 100%;
+        height: 456px;
+        position: relative;
+        &-arrow {
+            position: absolute;
+            z-index: 10;
+            top: 56px;
+            cursor: pointer;
+            &_prev {
+                left: 50px;
+            }
+            &_next {
+                right: 50px;
+            }
+            &_disabled {
+                path {
+                    stroke: $gray;
+                }
+            }
+        }
+    }
+}
+.calendar {
+    @include padding-top(50,30);
+    @include padding-bottom(60,30);
+    padding-right: 30px;
+    padding-left: 30px;
+    background: #EDEDED;
+    border-radius: 10px;
+    color: $black;
+    font-size: 18px;
+    line-height: 1.2;
+    width: 100%;
+    height: 100%;
+    &__mounth {
+        text-align: center;
+    }
+    &__week {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        &-day {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+            font-weight: 700;
+        }
+    }
+    &__days {
+        @include margin-top(30,10);
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        row-gap: 10px;
+    }
+    &__day {
+        @include height(34,46);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        cursor: pointer;
+        &-available {
+            position: relative;
+            &-time {
+                position: absolute;
+                bottom: -3px;
+                right: 50%;
+                transform: translateX(50%);
+                color: $blue;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                width: 61px;
+                height: 12px;
+                font-weight: 500;
+                font-size: 10px;
+                line-height: 1.2;
+            }
+        }
+        &-not-available {
+            color: $gray;
+            cursor: default;
+            &:hover {
+                color: $gray !important;
+                background-color: transparent !important;
+            }
+        }
+        &:hover {
+            color: $yellow;
+        }
+    }
+}

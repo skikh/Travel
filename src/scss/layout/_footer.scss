@@ -1,0 +1,72 @@
+.footer {
+    background-color: #EDEDED;
+    padding: 30px 0;
+    a {
+        font-weight: 500;
+        @include font-size(14,12);
+        line-height: 1.2;
+        color: $black;
+        &:hover {
+            color: $yellow;
+            transition: .3s ease all;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        @include gap(110,20);
+    }
+    &__left {
+        align-self: center;
+    }
+    &__logo {
+        width: 80px;
+        height: 114px;
+    }
+    &__middle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex: 1 1 auto;
+    }
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        @include gap(8,5);
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        @include gap(8,5);
+    }
+    &__contact-item {
+        display: flex;
+        @include gap(9,5);
+        align-items: center;
+    }
+    &__right {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    &__email {
+        padding-left: 27px;
+        position: relative;
+        &:before {
+            content: '';
+            background: url('../icons/mail.svg') no-repeat center;
+            position: absolute;
+            width: 19px;
+            height: 19px;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+        }
+    }
+    &__social {
+        display: flex;
+        align-items: center;
+        align-self: center;
+        gap: 6px;
+    }
+}

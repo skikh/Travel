@@ -1,0 +1,11 @@
+.additional {
+    &__items {
+        @include margin-top(100,60);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 40px;
+        padding: 0 15px;
+    }
+}

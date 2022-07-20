@@ -1,0 +1,23 @@
+.swiper-videos {
+    @include max-width(620,320); 
+    position: relative;
+    margin-bottom: -250px;
+    margin-right: 0;
+    margin-right: 0;
+    top: -190px;
+
+    &__wrapper{    
+        width: 620px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__slide{
+        position: relative;
+        &-play{
+            position: absolute;
+            top: 100px;
+            left: 158px;
+        }
+  }
+}

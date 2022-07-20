@@ -1,0 +1,116 @@
+// Container
+
+@mixin container ($containerWidth) {
+    max-width: calc(#{$containerWidth}px + 30px);
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+// Font-size
+
+@mixin font-size($fz, $minFz) {
+    $difference: $fz - $minFz;
+	font-size: calc(#{$minFz}px + #{$difference} * ((100vw - 320px)/ #{$mainWidth}));
+};
+
+
+// Gap
+
+@mixin gap($Gap, $minGap) {
+    $difference: $Gap - $minGap;
+	gap: calc(#{$minGap}px + #{$difference} * ((100vw - 320px)/ #{$mainWidth}));
+};
+
+
+// Padding
+
+@mixin padding($p, $mp) {
+    $difference: $p - $mp;
+	padding: calc(#{$mp}px + #{$difference} * ((100vw - 320px) / #{$mainWidth}))
+}
+@mixin padding-top($p, $mp) {
+    $difference: $p - $mp;
+	padding-top: calc(#{$mp}px + #{$difference} * ((100vw - 320px) / #{$mainWidth}))
+}
+@mixin padding-right($p, $mp) {
+    $difference: $p - $mp;
+	padding-right: calc(#{$mp}px + #{$difference} * ((100vw - 320px) / #{$mainWidth}))
+}
+@mixin padding-bottom($p, $mp) {
+    $difference: $p - $mp;
+	padding-bottom: calc(#{$mp}px + #{$difference} * ((100vw - 320px) / #{$mainWidth}))
+}
+@mixin padding-left($p, $mp) {
+    $difference: $p - $mp;
+	padding-left: calc(#{$mp}px + #{$difference} * ((100vw - 320px) / #{$mainWidth}))
+}
+
+
+// Margin
+
+@mixin margin($m, $mm) {
+    $difference: $m - $mm;
+	margin: calc(#{$mm}px + #{$difference} * ((100vw - 320px) / #{$mainWidth}))
+}
+@mixin margin-top($m, $mm) {
+    $difference: $m - $mm;
+	margin-top: calc(#{$mm}px + #{$difference} * ((100vw - 320px) / #{$mainWidth}))
+}
+@mixin margin-right($m, $mm) {
+    $difference: $m - $mm;
+	margin-right: calc(#{$mm}px + #{$difference} * ((100vw - 320px) / #{$mainWidth}))
+}
+@mixin margin-bottom($m, $mm) {
+    $difference: $m - $mm;
+	margin-bottom: calc(#{$mm}px + #{$difference} * ((100vw - 320px) / #{$mainWidth}))
+}
+@mixin margin-left($m, $mm) {
+    $difference: $m - $mm;
+	margin-left: calc(#{$mm}px + #{$difference} * ((100vw - 320px) / #{$mainWidth}))
+}
+
+
+// Width
+
+@mixin width($w, $mw) {
+    $difference: $w - $mw;
+	width: calc(#{$mw}px + #{$difference} * ((100vw - 320px) / #{$mainWidth}))
+}
+
+// Max-width
+
+@mixin max-width($mw, $mmw) {
+    $difference: $mw - $mmw;
+    max-width: calc(#{$mmw}px + #{$difference} * ((100vw - 320px)/ #{$mainWidth}))
+}
+
+// Height
+
+@mixin height($h, $mh) {
+    $difference: $h - $mh;
+	height: calc(#{$mh}px + #{$difference} * ((100vw - 320px) / #{$mainWidth}))
+}
+
+
+// Max-height
+
+@mixin max-height($maxh, $mmaxh) {
+    $difference: $maxh - $mmaxh;
+	max-height: calc(#{$mmaxh}px + #{$difference} * ((100vw - 320px) / #{$mainWidth}))
+}
+
+// Min-height
+
+@mixin min-height($minh, $mminh) {
+    $difference: $minh - $mminh;
+	min-height: calc(#{$mminh}px + #{$difference} * ((100vw - 320px) / #{$mainWidth}))
+}
+
+
+// Line-height
+
+@mixin line-height($lh, $mlh) {
+    $difference: $lh - $mlh;
+	line-height: calc(#{$mlh}px + #{$difference} * ((100vw - 320px) / #{$mainWidth}))
+}

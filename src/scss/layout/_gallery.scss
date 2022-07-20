@@ -1,0 +1,59 @@
+// Галерея + top разделе gallery
+
+.gallery {
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__container {
+        padding: 0 15px;
+        max-width: 1430px;
+        margin: 0 auto;
+    }
+    &__wrapper {
+        @include margin-top(90,30);
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 215px 265px 360px 265px 215px;
+        grid-template-rows: 265px repeat(2, 125px);
+        gap: 20px 20px; 
+        grid-template-areas: 
+        "img1 img1 img2 img3 img4"
+        "img5 img6 img2 img8 img8"
+        "img5 img7 img2 img8 img8"; 
+    }
+    &__img {
+        overflow: hidden;
+        filter: brightness(.85);
+        transition: .6s linear all;
+        border-radius: 5px;
+        &_1 { grid-area: img1; }
+        &_2 { grid-area: img2; }
+        &_3 { grid-area: img3; }
+        &_4 { grid-area: img4; }
+        &_5 { grid-area: img5; }
+        &_6 { grid-area: img6; }
+        &_7 { grid-area: img7; }
+        &_8 { grid-area: img8; }
+        &:hover {
+            transition: .6s linear all;
+            filter: brightness(1);
+            img {
+                transform: scale(1.2);
+                transition: .6s linear all;
+            }
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: .6s linear all;
+        }
+        a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+html, body {
+    height: 100%;
+}
+
+.container {
+    @include container($containerWidth);
+}
+.container-fluid {
+    margin: 0px;
+    &_l {
+    margin-left: calc(50% - #{$containerWidth}px / 2);
+    }
+    &_r {
+    margin-right: calc(50% - #{$containerWidth}px / 2);
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-height: 100%;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+section {
+    @include padding-top(75,50);
+    @include padding-bottom(75,50);
+}
+
+.active {
+    display: block;
+}
+
+
+
+
+

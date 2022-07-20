@@ -1,0 +1,10 @@
+// Colors
+$black: #282828;
+$blue: #0499DD;
+$yellow: #FFC700;
+$gray: #D4D4D4;
+
+// Container
+$containerWidth: 1120;
+$currentWidth: 1680;
+$mainWidth: calc(#{$currentWidth - 320});

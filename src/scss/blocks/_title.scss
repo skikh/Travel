@@ -1,0 +1,7 @@
+//Титул перед всеми section 
+.title {
+    font-weight: 700;
+    @include font-size(24,22);
+    line-height: 1.2;
+    color: $blue;
+}

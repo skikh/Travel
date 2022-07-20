@@ -1,0 +1,110 @@
+.popular {
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .swiper {
+        &-slide {
+            @include width(360,280);
+            @include height(500,450);
+        }
+    }
+}
+
+
+// Item-card
+
+.item-card {
+    padding-right: 15px;
+    padding-left: 15px;
+    @include padding-top(200,160);
+    @include padding-bottom(40,30);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.121739) 0%, #000000 100%);
+    border-radius: 10px;    
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.2;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    &:hover {
+        .item-card__img {
+            transform: scale(1.2);
+            transition: .6s linear transform;
+        }
+    }
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        border-radius: 10px;      
+        object-fit: cover;
+        transition: .6s linear transform;
+    }
+    &__title {
+        color: inherit;
+        font-weight: inherit;
+        font-size: inherit;
+        line-height: inherit;
+    }
+    &__name {
+        margin-top: 2px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: $yellow;
+    }
+    &__info {
+        margin-top: 10px;
+        display: flex;
+        gap: 10px;
+        &-time {
+            padding-left: 16px;
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                bottom: 50%;
+                transform: translateY(50%);
+                left: 0px;
+                background: url('../build/icons/time.svg') no-repeat center;
+                width: 12px;
+                height: 12px;
+            }
+        }
+        &-price {
+            padding-left: 18px;
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                bottom: 50%;
+                transform: translateY(50%);
+                left: 0px;
+                background: url('../build/icons/price.svg') no-repeat center;
+                width: 15px;
+                height: 15px;
+            }
+        }
+    }
+    &__descr {
+        margin-top: 20px;
+        height: 130px;
+        overflow: hidden;
+        position: relative;
+        text-overflow: ellipsis; 
+    }
+    &__btn {
+        margin-top: auto;
+    }
+}
