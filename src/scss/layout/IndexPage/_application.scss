@@ -2,7 +2,7 @@
 
 .application {
     padding: 0;
-    background: url('img/bg-application.png') no-repeat 50%/cover;
+    background: url('../images/bg-application.png') no-repeat 50%/cover;
     &__wrapper {
         @include max-width(560,290);
         @include padding-top(130,120);

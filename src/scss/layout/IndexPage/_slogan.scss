@@ -1,5 +1,5 @@
 .slogan {
-    background: url('../build/img/bg-slogan.png') no-repeat 50%/cover;
+    background: url('../images/bg-slogan.png') no-repeat 50%/cover;
     @include padding-top(240,180);
     @include padding-bottom(250,50);
     &__main {
@@ -25,7 +25,7 @@
                 right: -17%;
                 @include width(155,110);
                 @include height(50,45);
-                background: url('../build/icons/together.svg') no-repeat center/contain;
+                background: url('../images/icons/together.svg') no-repeat center/contain;
             }
         }
         &-second {

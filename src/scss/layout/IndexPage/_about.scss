@@ -7,7 +7,7 @@
     &__bg {
         @include height(750,700);
         width: 85%;
-        background: url('../build/img/bg-about.jpg') no-repeat 50%/cover;
+        background: url('../images/bg-about.jpg') no-repeat 50%/cover;
         border-radius: 0px 10px 10px 0px;
         filter: brightness(.75);
     }
