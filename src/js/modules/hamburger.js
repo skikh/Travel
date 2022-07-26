@@ -1,3 +1,5 @@
+export function hamburgerWork(){
+
 function hamburger() {
     const   menu       = document.querySelector('.menu'),
             hamburger  = document.querySelector('.hamburger'),
@@ -17,4 +19,5 @@ function hamburger() {
             body.classList.remove('lock');
         })
     });
+};
 };
