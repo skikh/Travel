@@ -1,5 +1,3 @@
-export function hamburgerWork(){
-
 function hamburger() {
     const   menu       = document.querySelector('.menu'),
             hamburger  = document.querySelector('.hamburger'),
@@ -20,4 +18,5 @@ function hamburger() {
         })
     });
 };
-};
+
+hamburger()
