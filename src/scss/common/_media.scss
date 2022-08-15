@@ -68,6 +68,35 @@
             grid-column: 12 span;
         }
     }
+    .hamburger {
+        display: flex;
+    }
+    .menu {
+        padding-top: 100px;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        visibility: hidden;
+        opacity: 0;
+        transition: .4s ease all;
+        background-color: $black;
+        &.active {
+            right: 0%;
+            visibility: visible;
+            opacity: 1;
+            transition: .4s ease all;
+        }
+        &__list {
+            flex-direction: column;
+            @include gap(60,45);
+        }
+        &__link {
+            font-weight: 700;
+            @include font-size(24,18);
+        }
+    }
 }
 
 @media (max-width: 620px) {

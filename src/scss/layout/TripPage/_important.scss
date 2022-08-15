@@ -24,7 +24,7 @@
         padding-left: 95px;
         &:before {
             content: '';
-            background: url('icons/pasport.svg') no-repeat center/cover;
+            background: url('/images/icons/pasport.svg') no-repeat center/cover;
             position: absolute;
             top: 0px;
             left: 0px;
@@ -50,7 +50,7 @@
     &__warning-item {
         @include padding(25,10);
         @include padding-right(60,35);
-        background: url('icons/!.svg') no-repeat 93% #EDEDED;
+        background: url('/images/icons/!.svg') no-repeat 93% #EDEDED;
         display: flex;
         justify-content: center;
         align-items: center;

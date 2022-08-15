@@ -11,47 +11,25 @@
 }
 .menu {
     z-index: 10;
-
-        padding-top: 100px;
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 100%;
-        height: 100vh;
-        visibility: hidden;
-        opacity: 0;
-        transition: .4s ease all;
-        background-color: $black;
-        &.active {
-            right: 0%;
-            visibility: visible;
-            opacity: 1;
-            transition: .4s ease all;
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    &__link {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+        &:hover {
+            color: $yellow;
+            transition: .3s ease all;
         }
-        &__list {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            flex-direction: column;
-            @include gap(60,45);
-        }
-        &__link {
-            font-weight: 700;
-            @include font-size(24,18);
-            font-weight: 500;
-            font-size: 24px;
-            line-height: 17px;
-            color: #FFFFFF;
-            &:hover {
-                color: $yellow;
-                transition: .3s ease all;          
-            }
-        }
-
+    }
 }
 
 .hamburger {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     height: 25px;

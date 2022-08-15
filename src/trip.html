@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'Тур | Travel'
+  })
+  <body>
+    <div class="wrapper">
+    @@include('html/header.html', {})
+    <main class="main">
+      @@include('html/TripPage/name.html', {})
+      @@include('html/TripPage/descr.html', {})
+      @@include('html/TripPage/trip-calendar.html', {})
+      @@include('html/TripPage/route.html', {})
+      @@include('html/TripPage/additional.html', {})
+      @@include('html/TripPage/important.html', {})
+      @@include('html/gallery.html', {})
+      @@include('html/feedback.html', {})
+      @@include('html/TripPage/booking.html', {})
+    </main>
+    @@include('html/footer.html', {})
+    </div>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/app.min.js"></script>
+  </body>
+</html> 
