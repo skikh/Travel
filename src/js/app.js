@@ -1,5 +1,4 @@
 import * as flsFunctions from './modules/functions.js';
-import * as ham from './modules/hamburger.js';
 import * as feedbackSwiper from './modules/feedback-swiper.js';
 
 
